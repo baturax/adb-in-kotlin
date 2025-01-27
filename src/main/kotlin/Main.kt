@@ -14,4 +14,3 @@ fun main() = application {
         App()
     }
 }
-//deneme
