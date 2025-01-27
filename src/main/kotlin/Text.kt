@@ -1,13 +1,12 @@
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material.Button
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.sp
+import texts.adbTexts
+import texts.bloatsText
+import texts.fastbootTexts
 
 @Composable
 fun Texts(){
@@ -16,20 +15,9 @@ fun Texts(){
 			modifier = Modifier.fillMaxWidth(),
 			horizontalArrangement = Arrangement.SpaceBetween
 		) { // main menu
-			Column(
-			) {//adb tools menu
-				Text(text = "ADB Tools",
-					fontSize = 30.sp)
-				Button(onClick = { print("adb") }) { Text("ADB Devices")}
-			}
-			Column {
-				Text(text = "FastBoot Tools")
-				Button(onClick = { print("fastboot") }) { Text("Fastboot Devices")}
-			}
-			Column {
-				Text(text = "Blaots")
-				Button(onClick = { print("bloats") }) { Text("Downlaod Tools")}
-			}
+			adbTexts()
+			fastbootTexts()
+			bloatsText()
 		}
 	}
 }
