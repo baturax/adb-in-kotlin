@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import tools.fastbootDevices
 
 @Composable
 
@@ -16,6 +17,6 @@ fun fastbootTexts() { Column {
 		 fontWeight = FontWeight.Bold,
 		 fontStyle = FontStyle.Italic
 	)
-	Button(onClick = { print("fastboot") }) { Text("Fastboot Devices")}
+	Button(onClick = { fastbootDevices() }) { Text("Fastboot Devices")}
 }
 }
