@@ -7,3 +7,4 @@ fun fastbootDevices() {
 	val printdevsfb = ProcessBuilder(fastbootdirectory, "--version")
 	printdevsfb.redirectOutput(ProcessBuilder.Redirect.INHERIT).redirectError(ProcessBuilder.Redirect.INHERIT).start().waitFor()
 }
+//deneme
